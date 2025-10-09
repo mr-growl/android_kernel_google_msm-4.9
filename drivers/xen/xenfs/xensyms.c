@@ -10,7 +10,7 @@
 #include "xenfs.h"
 
 
-#define XEN_KSYM_NAME_LEN 127 /* Hypervisor may have different name length */
+#define XEN_KSYM_NAME_LEN 255 /* Hypervisor may have different name length */
 
 struct xensyms {
 	struct xen_platform_op op;
