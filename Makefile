@@ -645,7 +645,7 @@ ifdef CONFIG_LTO_CLANG
 # use GNU gold with LLVMgold for LTO linking, and LD for vmlinux_link
 LDFINAL_vmlinux := $(LD)
 LD		:= $(LDGOLD)
-LDFLAGS		+= -plugin LLVMgold.so
+LDFLAGS		+= -plugin /usr/lib/llvm-android-12.0-r416183b/lib64/LLVMgold.so
 LDFLAGS		+= -plugin-opt=-function-sections
 LDFLAGS		+= -plugin-opt=-data-sections
 # use llvm-ar for building symbol tables from IR files, and llvm-dis instead
